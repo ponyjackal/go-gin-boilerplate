@@ -1,4 +1,4 @@
-package repository
+package repositories
 
 import (
 	"github.com/ponyjackal/go-gin-boilerplate/internal/adapters/database"

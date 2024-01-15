@@ -1,15 +1,17 @@
 package controllers
 
 import (
-	"gin-boilerplate/models"
-	"gin-boilerplate/repository"
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/ponyjackal/go-gin-boilerplate/internal/domain/repositories"
+
+	"github.com/gin-gonic/gin"
+	"github.com/ponyjackal/go-gin-boilerplate/internal/domain/models"
 )
 
 func GetData(ctx *gin.Context) {
 	var example []*models.Example
-	repository.Get(&example)
+	repositories.Get(&example)
 	ctx.JSON(http.StatusOK, &example)
 
 }
