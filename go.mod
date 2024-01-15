@@ -1,6 +1,6 @@
-module gin-boilerplate
+module github.com/ponyjackal/go-gin-boilerplate
 
-go 1.17
+go 1.21
 
 require (
 	github.com/gin-gonic/gin v1.7.7

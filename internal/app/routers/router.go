@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"gin-boilerplate/routers/middleware"
 	"github.com/gin-gonic/gin"
+	"github.com/ponyjackal/go-gin-boilerplate/internal/app/middlewares"
 	"github.com/spf13/viper"
 )
 
@@ -20,7 +20,7 @@ func SetupRoute() *gin.Engine {
 	router.SetTrustedProxies([]string{allowedHosts})
 	router.Use(gin.Logger())
 	router.Use(gin.Recovery())
-	router.Use(middleware.CORSMiddleware())
+	router.Use(middlewares.CORSMiddleware())
 
 	RegisterRoutes(router) //routes register
 

@@ -1,13 +1,15 @@
 package main
 
 import (
-	"gin-boilerplate/config"
-	"gin-boilerplate/infra/database"
-	"gin-boilerplate/infra/logger"
-	"gin-boilerplate/migrations"
-	"gin-boilerplate/routers"
-	"github.com/spf13/viper"
 	"time"
+
+	"github.com/ponyjackal/go-gin-boilerplate/internal/adapters/database"
+	"github.com/ponyjackal/go-gin-boilerplate/internal/adapters/database/migrations"
+	"github.com/ponyjackal/go-gin-boilerplate/internal/app/routers"
+	"github.com/ponyjackal/go-gin-boilerplate/pkg/config"
+	"github.com/ponyjackal/go-gin-boilerplate/pkg/logger"
+
+	"github.com/spf13/viper"
 )
 
 func main() {

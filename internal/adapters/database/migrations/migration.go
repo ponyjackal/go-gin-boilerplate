@@ -1,8 +1,9 @@
 package migrations
 
 import (
-	"gin-boilerplate/infra/database"
-	"gin-boilerplate/models"
+	"github.com/ponyjackal/go-gin-boilerplate/internal/domain/models"
+
+	"github.com/ponyjackal/go-gin-boilerplate/internal/adapters/database"
 )
 
 // Migrate Add list of model add for migrations
